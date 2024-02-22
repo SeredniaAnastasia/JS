@@ -31,3 +31,7 @@ const getLaterSymbol =(str1) => str1.at(-1) === 'ь' ? str1.at(-2) : str1.at(-1)
 ```sh
 const getFirstNumber =(num) => num.toString()[0]
 ```
+## Дано число. Виведіть у консоль останню цифру цього числа.
+```sh
+const getFirstNumber =(num) => num.toString().at(-1)
+```
