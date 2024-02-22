@@ -4,9 +4,9 @@ const isMinus =(n) => n < 0 ? true : false
 ```
 ## Повернути останній символ з строки
 ```sh
-### Варіант 1
+аріант 1
 const getLaterSymbol =(str) => str[ str.length-1 ]
-### Варіант 2
+Варіант 2
 const getLaterSymbol =(str) => str.at(-1)
 ```
 
