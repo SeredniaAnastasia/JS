@@ -56,5 +56,13 @@ const getBeforeTheLastNumber = (str) => str.length > 0 ? str.at(-2) : undefined
 ### Дано два цілих числа. Перевірте, що перше число без залишку поділяється на друге.
 ```sh
 const isDivisionWithoutRemainder = (num1, num2) => !(num1 % num2) 
+```
 
+### Виведіть у консоль усі парні числа із проміжку від 1 до 100.
+```sh
+const printWholeNumbers = () => {
+    for(let i=1; i<=100; i++){
+        !(i % 2) && console.log(i)
+    }
+}
 ```
