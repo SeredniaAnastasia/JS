@@ -39,3 +39,22 @@ const getLastNumber =(num) => num.toString().at(-1)
 ```sh
 const getSumFirstAndLastNumber = (num) => +num.toString()[0] + +num.toString().at(-1)
 ```
+### Дано число. Виведіть кількість цифр у цьому числі.
+```sh
+const getLengthNumber= (num) => num.toString().length
+```
+### Дано два числа. Перевірте, чи перші цифри цих чисел збігаються.
+```sh
+const isFirstNumber= (num1, num2) => num1.toString()[0] === num2.toString()[0]
+```
+
+### Дано рядок. Якщо в цьому рядку більше одного символу, виведіть передостанній символ цього рядка в консоль.
+```sh
+const getBeforeTheLastNumber = (str) => str.length > 0 ? str.at(-2) : undefined 
+```
+
+### Дано два цілих числа. Перевірте, що перше число без залишку поділяється на друге.
+```sh
+const isDivisionWithoutRemainder = (num1, num2) => !(num1 % num2) 
+
+```
