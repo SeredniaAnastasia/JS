@@ -33,5 +33,5 @@ const getFirstNumber =(num) => num.toString()[0]
 ```
 ## Дано число. Виведіть у консоль останню цифру цього числа.
 ```sh
-const getFirstNumber =(num) => num.toString().at(-1)
+const getLastNumber =(num) => num.toString().at(-1)
 ```
