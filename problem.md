@@ -167,3 +167,23 @@ function percent (num, p){
 
 console.log(percent(num, 10))
 ```
+### Даний деякий масив, наприклад, ось такий:
+[1, 2, 3, 4, 5, 6]
+По очереди выведите в консоль подмассивы из двух элементов нашего массива:
+[1, 2]
+[3, 4]
+[5, 6]
+```sh
+const arr = [1, 5, 7, 8, 9, 6];
+let arr2 = [];
+for(let i = 0; i < arr.length; i++){
+    arr2.push(arr[i])
+    if(arr2.length === 2){
+        console.log(arr2);
+        arr2.splice(0, 2)
+    }
+
+}
+
+console.log(arr)
+```
