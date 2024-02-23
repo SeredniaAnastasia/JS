@@ -123,3 +123,19 @@ function roundingNumber(arr){
 
 console.log(roundingNumber(m))
 ```
+### Дано масив з рядками. Залишіть у цьому масиві лише ті рядки, які починаються на http://.
+```sh
+const arrStr = [
+    'http://.google.com',
+    'http://.youtube.com',
+    'yandex http://.yandex.ru ',
+    'codemu http://.code.mu'
+]
+const arr = [];
+for(let i= 0; i < arrStr.length; i++){
+    if(arrStr[i].indexOf('http://') === 0){
+        arr.push(arrStr[i])
+    }
+}
+console.log(arr)
+```
