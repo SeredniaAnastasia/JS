@@ -66,3 +66,21 @@ const printWholeNumbers = () => {
     }
 }
 ```
+
+### Повернути в обєкті окркмо суму парних і непарних чисел 
+```sh
+const getSumNumber = () => {
+    let sumOfEvenNumbers = 0;
+    let sumOfOddNumbers = 0;
+    for(let i=1; i<=100; i++){
+        if(!(i % 2))
+        sumOfEvenNumbers += i;
+        else
+        sumOfOddNumbers += i;
+    }
+    return {
+      sumOfEvenNumbers,
+      sumOfOddNumbers
+    }
+}
+```
