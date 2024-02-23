@@ -1,7 +1,11 @@
 ### Провірка на відємне число
+
+<details><summary>Рішення</summary>
 ```sh
 const isMinus =(n) => n < 0 ? true : false
 ```
+</details>
+
 ### Повернути останній символ з строки
 ```sh
 Варіант 1
@@ -83,4 +87,39 @@ const getSumNumber = () => {
       sumOfOddNumbers
     }
 }
+```
+
+### Даний масив із числами. Знайдіть суму квадратів елементів цього масиву.
+```sh
+const arr =  [10, 22, 8, 3, 7, 67, 34, 345, 34, 12];
+let sum =0;
+for(let i = 0; i < arr.length; i++){
+    sum+= arr[i]**2;
+
+}
+
+arr.forEach(e => sum += e**2)
+const summa = arr.reduce((a, e) => {
+   return a + e**2
+}, 0)
+
+console.log(summa)
+```
+### Округліть ці дроби до одного знака в дрібній частині.
+```sh
+const m = [1.456, 2.125, 3.32, 4.1, 5.34]; 
+
+function roundingNumber(arr){
+    const m2 = []
+    arr.forEach(e => {
+        m2.push(Number.parseFloat(e.toFixed(1)))
+    })
+    return m2
+}
+
+function roundingNumber(arr){
+  return arr.map(e => Number.parseFloat(e.toFixed(1)));
+}
+
+console.log(roundingNumber(m))
 ```
