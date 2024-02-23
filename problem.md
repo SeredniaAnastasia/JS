@@ -158,3 +158,12 @@ for(let i= 0, n=0; i < arrStr.length; i++){
 
 console.log(arr)
 ```
+### Даний масив із числами. Збільште кожну кількість з масиву на 10 відсотків.
+```sh
+const num = [45, 25, 87, 36, 27, 120, 35];
+function percent (num, p){
+    return num.map(e => parseInt(e / 100 * p + e))
+}
+
+console.log(percent(num, 10))
+```
