@@ -139,3 +139,22 @@ for(let i= 0; i < arrStr.length; i++){
 }
 console.log(arr)
 ```
+### Дано масив з рядками. Залишіть у цьому масиві лише ті рядки, які закінчуються на .html.
+```sh
+const arrStr = [
+    'http://glee.nastya03.zzz.com.ua/about.html',
+    'http://glee.nastya03.zzz.com.ua/coxcvxcntact.html  glee',
+    'http://glee.nastya03.zzz.com.ua/contact.html',
+    'http://glee.nastya03.zzz.com.ua/contact.html  glee'
+]
+
+const arr = [];
+
+for(let i= 0, n=0; i < arrStr.length; i++){
+    if(arrStr[i].length - arrStr[i].indexOf('.html') === '.html'.length){
+        arr[n++] = (arrStr[i])
+    }
+}
+
+console.log(arr)
+```
