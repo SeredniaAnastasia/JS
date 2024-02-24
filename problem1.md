@@ -36,3 +36,23 @@ delateElement(arr, 4)
 delateElement(arr, 1)
 delateElement(arr, 3)
 ```
+
+### Дан массив с числами. Оставьте в нем только положительные числа.
+```sh
+ const arr = [1, 2, -3, 4, 5, 5, -1, 2, -3, -4, 5, 6];
+ const arr2 = [];
+
+ for(let i = 0; i < arr.length; i++){
+    if(arr[i] > 0){
+        arr2.push(arr[i])
+    }
+ }
+ console.log(arr2)
+
+while(arr.findIndex((e)=> e < 0)>=0){
+    arr.splice(arr.findIndex((e)=> e < 0), 1)
+}
+
+
+console.log(arr)
+```
