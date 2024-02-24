@@ -56,3 +56,9 @@ while(arr.findIndex((e)=> e < 0)>=0){
 
 console.log(arr)
 ```
+### Дано рядок. Видаліть передостанній символ із цього рядка
+```sh
+const str  = "hello world"
+const str2 = str.slice(0, -2) + str.slice(-1)
+console.log(str2)
+```
