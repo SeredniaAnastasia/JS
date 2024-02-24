@@ -77,3 +77,28 @@ arr.forEach((e, i, arr)=>{
         sum2 += e;
 })
 ```
+### Дано числа, розділені комами. Знайдіть суму цих чисел.
+```sh
+const s = '12,34,56'
+
+const res = s.split(',').reduce((a, e) => a + +e ,0)
+console.log(res)
+```
+
+### Дана дата в наступному форматі:
+'2025-12-31'
+#### Преобразуйте эту дату в следующий объект:
+```sh
+const s = '2025-12-31'
+
+
+const res = s.split('-')
+
+const object = {
+    year: res[0],
+    month: res[1],
+    day: res[2]
+}
+
+console.log(object)
+```
