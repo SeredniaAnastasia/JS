@@ -62,3 +62,14 @@ const str  = "hello world"
 const str2 = str.slice(0, -2) + str.slice(-1)
 console.log(str2)
 ```
+### Дан некоторый массив, например, вот такой:
+[1, 2, 3, 4, 5, 6]
+#### Поделите сумму первой половины элементов этого массива на сумму второй половины элементов.
+```sh
+arr.forEach((e, i, arr)=>{
+    if(arr.length /2 > i)
+        sum1 += e;
+    else
+        sum2 += e;
+})
+```
