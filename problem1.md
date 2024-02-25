@@ -115,3 +115,20 @@ for(let i = 0; i < str.length; i++){
     }
 }
 ```
+
+
+### Дано число. Выведите в консоль количество четных цифр в этом числе
+
+```sh
+const num = 455578832165;
+let n = 0;
+const str = num.toString().split('').reduce((a, e) => !(+e % 2) ? a++ : a , 0)
+let str = num.toString().split('').reduce((a, e) => !(+e % 2) ? a+1 : a , 0)
+
+for(let i = 0; i < str.length; i++){
+    if(!(+str[i] % 2)){
+        n++
+    }
+}
+console.log(str)
+```
