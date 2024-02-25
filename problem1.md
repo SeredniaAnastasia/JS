@@ -102,3 +102,16 @@ const object = {
 
 console.log(object)
 ```
+#### Дана некоторая строка с буквами и цифрами. Получите позицию первой цифры в этой строке або букви
+```sh
+onst str = '8768796*/-*/HJGtext45word6lop'
+const n = str.search(/\d/);
+const n = str.split('').findIndex(e => e >= '0' && e <= '9')
+let n2 = -1;
+for(let i = 0; i < str.length; i++){
+    if(str[i] >= 'A' && str[i] <= 'Z' || str[i] >= 'a' && str[i] <= 'z'){
+        n2 = i;
+        break;
+    }
+}
+```
