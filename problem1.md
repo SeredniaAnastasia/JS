@@ -148,3 +148,65 @@ str.split('').forEach((e, i) => e === '0' && arr.push(i) )
 
 console.log(arr)
 ```
+### Дано деякий рядок. Видаліть кожен третій символ з цього рядка.
+```sh
+const str = 'abcdefg';
+let str2 = '';
+
+for(let i = 0; i < str.length; i++){
+    if ((i+1) % 3){
+       str2 += str[i]
+    }
+}
+
+console.log(str2)
+```
+### Даний деякий масив. Поділіть суму елементів, що стоять на парних позиціях, на суму елементів, що стоять на непарних позиціях.
+```sh
+const arr = [1, 2, 3, 4, 5, 6];
+let par = 0;
+let nepar = 0;
+
+// for(let i = 0; i < arr.length; i++){
+//     if(!(arr[i] % 2)){
+//         par += arr[i]
+//     } else {
+//         nepar += arr[i]
+//     }
+// }
+
+arr.forEach(e => (e % 2) === 0 ? par += e : nepar += e)
+
+console.log(par / nepar)
+```
+### Дано деякий рядок з літерами та цифрами. Отримайте масив позицій усіх цифр із цього рядка.
+```sh
+const str = 'fds436gg2c5n8';
+let arr =  [];
+
+// for(let i = 0; i < str.length; i++){
+//     if(str[i] >= '0' && str[i] <= '9'){
+//         arr.push(i)
+//     }
+// }
+
+// str.split('').forEach((e, i) => e >= '0' && e <= '9' && arr.push(i))
+
+const arr2 = str.split('').reduce((a, e, i) => {
+    if(e >= '0' && e <= '9'){
+         a.push(i)
+        console.log(a)
+    }
+    return a;
+}, [])
+
+console.log(arr2)
+```
+### Даний масив з деякими числами, наприклад, такий:[123, 456, 789] Напишіть код, який переверне числа в цьому масиві за таким принципом: [321, 654, 987]
+```sh
+const arr = [123, 456, 789];
+
+arr.forEach((e, i) => arr[i] = +e.toString().split('').reverse().join(''))
+
+console.log(arr)
+```
