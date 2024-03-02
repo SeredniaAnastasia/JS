@@ -132,3 +132,19 @@ for(let i = 0; i < str.length; i++){
 }
 console.log(str)
 ```
+### Дано деякий рядок. Отримайте масив позицій всіх нулів у цьому рядку.
+```sh
+const str = '023m0df0dfg0';
+let arr = [];
+
+// for(let i = 0; i < str.length; i++){
+//     if(str[i] === '0'){
+//         arr.push(i)
+//     }
+// }
+
+
+str.split('').forEach((e, i) => e === '0' && arr.push(i) )
+
+console.log(arr)
+```
