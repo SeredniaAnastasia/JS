@@ -255,3 +255,15 @@ console.log(str.join(''))
     console.log(str2)
 
 ```
+### Даний деякий масив з числами. Злийте пари елементів разом.
+```sh
+const arr = [1, 2, 3, 4, 5, 6];
+let arr2 = [];
+
+for(let i = 0; i < arr.length; i+=2){
+        // arr2.push(+(arr[i].toString()+arr[i+1].toString()))
+        arr2.push(arr[i]*10 + arr[i+1])
+}
+
+console.log(arr2)
+```
