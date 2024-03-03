@@ -210,3 +210,48 @@ arr.forEach((e, i) => arr[i] = +e.toString().split('').reverse().join(''))
 
 console.log(arr)
 ```
+### Дано деякий рядок з числом. Відокремте трійки цифр пробілами, починаючи з кінця числа.
+```sh
+const str = '12245754234567'.split('');
+let count = 0;
+
+for(let i = str.length-1; i >= 0; i--){
+    count++
+    if(count === 3){
+        str.splice(i, 0, ' ')
+        count = 0
+    }
+}
+
+console.log(str.join(''))
+```
+### Змініть регістр букв цього рядка на протилежний. 
+```sh
+    const str = 'AbCd256*/E';
+    let str2 = '';
+
+    for(let i = 0; i < str.length; i++){
+        if(str[i] >= 'A' && str[i] <= 'Z'){
+        str2 += str[i].toLowerCase()
+        } else if(str[i] >= 'a' && str[i] <= 'z') {
+            str2 += str[i].toUpperCase()
+        } else{
+            str2 += str[i]
+        }
+
+    }
+
+ const str2 = str.split('').map(e => {
+        if(e >= 'A' && e <= 'Z'){
+            return e.toLowerCase()
+        } else if(e >= 'a' && e <= 'z'){
+            return e.toUpperCase()
+        }else {
+            return e
+        }
+
+    })
+    .join('')
+    console.log(str2)
+
+```
